@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  팔기: MyString
+  물건: MyText
+  가격: 1
+  상태: false
+
+two:
+  팔기: MyString
+  물건: MyText
+  가격: 1
+  상태: false

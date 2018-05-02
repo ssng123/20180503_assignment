@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Joong Gos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>팔기</th>
+      <th>물건</th>
+      <th>가격</th>
+      <th>상태</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @joong_gos.each do |joong_go| %>
+      <tr>
+        <td><%= joong_go.팔기 %></td>
+        <td><%= joong_go.물건 %></td>
+        <td><%= joong_go.가격 %></td>
+        <td><%= joong_go.상태 %></td>
+        <td><%= link_to 'Show', joong_go %></td>
+        <td><%= link_to 'Edit', edit_joong_go_path(joong_go) %></td>
+        <td><%= link_to 'Destroy', joong_go, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Joong Go', new_joong_go_path %>

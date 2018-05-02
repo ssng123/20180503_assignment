@@ -1,0 +1,2 @@
+class JoongGo < ApplicationRecord
+end

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>팔기:</strong>
+  <%= @joong_go.팔기 %>
+</p>
+
+<p>
+  <strong>물건:</strong>
+  <%= @joong_go.물건 %>
+</p>
+
+<p>
+  <strong>가격:</strong>
+  <%= @joong_go.가격 %>
+</p>
+
+<p>
+  <strong>상태:</strong>
+  <%= @joong_go.상태 %>
+</p>
+
+<%= link_to 'Edit', edit_joong_go_path(@joong_go) %> |
+<%= link_to 'Back', joong_gos_path %>
